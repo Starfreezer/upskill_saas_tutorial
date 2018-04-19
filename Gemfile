@@ -35,6 +35,8 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
+#Use Twitter Bootstrap Library for Front End Ui and Layout
+gem 'bootstrap-sass', '3.3.7'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
