@@ -22,7 +22,7 @@ h1, h2, h3 {
 
 }
 
-body, .navbar {
+.navbar, .home_callout {
   // Gradient Provided by @_igosh at uigradients.com
   background: #00d2ff;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
@@ -31,5 +31,12 @@ body, .navbar {
 
 .navbar{
   border:none;
+}
+
+.home_callout {
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color:white;
 }
 
