@@ -52,11 +52,26 @@ h1, h2, h3 {
 .navbar-default .navbar-brand ,
 .navbar-default .navbar-nav > li > a {
   color: ivory;
-  &:hover {
+  &:hover, {
     color: ivory;
     opacity: 0.75;
   }
 }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: lightcyan;
+    opacity: 0.85;
+  }
+}
+
+
+
 
 // Home Page Styles
 
