@@ -41,6 +41,9 @@ gem 'bootstrap-sass', '3.3.7'
 #Use Font Awesome for iconography
 gem 'font-awesome-sass', '4.6.2'
 
+#User Hirb for better database display in console
+gem 'hirb', '0.7.3'
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
