@@ -5,7 +5,7 @@ ruby '2.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.2'
 
-gem 'bundler', '1.16.1'
+gem 'bundler'
 
 # Use Puma as the app server
 gem 'puma', '3.4.0'
@@ -28,7 +28,6 @@ gem 'jbuilder', '2.5.0'
 # gem 'redis', '3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '3.1.7'
-gem 'pg', '0.9.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -60,7 +59,7 @@ end
 
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
-  gem 'pg', '0.9.0'
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
