@@ -83,8 +83,19 @@ h1, h2, h3 {
   color:white;
 }
 
-.alert-notice {
-  display: none;
+#home-page-error {
+  position: absolute;
+  width : 100%;
+  margin-top: 15px;
+  color: springgreen;
+}
+
+#home-page-error, .alert-notice, .alert-alert {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  
+  
 }
 
 .home-signup-links{

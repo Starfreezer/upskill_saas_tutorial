@@ -48,17 +48,28 @@
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
-    <%= yield %>
-    <!-- Changes flash message display area to bottom of form field -->
+<% if current_page?(root_path) %>
+  <div class = "container" id = "home-page-error">
+    <% flash.each do |type, msg| %>
+      <%= content_tag :div, msg, class: "alert-alert-#{type}"%>
+    <% end %>
+  </div>
+<% end %>  
+<%= yield %>
+
+<!-- Changes flash message display area to bottom of form field
+ if not on home Page-->
+  <% unless current_page? (root_path) %>
     <br>
-     <div class ="container">
+    <div class ="container">
       <div class ="row">
-        <div class ="col-md-4 col-md-offset-4">
+          <div class ="col-md-4 col-md-offset-4">
           <% flash.each do |type, msg|%>
-            <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+          <%= content_tag :div, msg, class: "alert alert-#{type}" %>
           <% end %>
         </div>
       </div>
     </div>
+  <% end %>
   </body>
 </html>
