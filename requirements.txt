@@ -8,3 +8,10 @@ Once validated rails should return user information and card token back to strip
 so stripe can create a subscribtion and return a customer token. Rails should
 then save customer token and information to our database.
 
+
+User Profiles
+* Each User should have one Profile
+* The User should see a link to the new profile form upon signing upon
+* The User  should be able to create and view their User Profile
+* User Profile should have a Profile Picture
+* Our Users should be able to view all User Profiles
