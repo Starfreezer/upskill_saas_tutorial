@@ -55,6 +55,9 @@ gem 'stripe'
 #Use figaro for ENV variables
 gem 'figaro', '1.1.1'
 
+#Use Paperclip for Image Upload
+gem 'paperclip', '4.3.6'
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
